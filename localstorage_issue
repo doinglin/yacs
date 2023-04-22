@@ -1,0 +1,19 @@
+This is the Vuex container for the Vue.js web application. Vuex is a state management library for Vue.js applications that provides a centralized location
+for managing application state. The repository is defined by a state object that contains application state, getters to retrieve state, mutations
+that update the state, and actions that are asynchronous actions and mutations to update state are performed
+
+The state object in this store has several properties, such as darkMode and colorBlindAssist which are used to control the look of the application,
+coursesById which is an object that maps course IDs to course objects, isLoadingCourses which means the course is currently loading, selectedSemester
+with its current semester selected, Semesters with available courses, subsemesters with available subcourses, and departments with available departments.
+
+The getters in this repository define functions that retrieve data from the state. The COURSES getter returns a list of course objects, while
+the GET_COURSE_BY_ID getter takes the course ID as an argument and returns the corresponding course object. The darkModeState and colorBlindAssistState
+getters return the darkMode and colorBlindAssist values, respectively.
+
+The changes in this repository define the operations that update the state. The TOGGLE_DARK_MODE switch changes the darkMode value,
+while the SAVE_DARK_MODE switch stores the darkMode value in a cookie. The RESET_DARK_MODE mutation clears the cookie and sets
+darkMode to the value of the browser's preferred color scheme. The TOGGLE_COLOR_BLIND_ASSIST mutation changes the value of
+colorBlindAssist and stores the value in a cookie. The SET_COURSES mutation accepts an array
+
+I can comprehend the code segments individually, but I don't know how exactly to write the code to would setup local storage for time filter function. 
+
